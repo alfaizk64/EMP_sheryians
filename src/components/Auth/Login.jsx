@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
      const [formData, setFormData] = useState({email: '', password:''});
       
      function changehandler(e){
@@ -13,9 +13,12 @@ const Login = () => {
         })  
      }
     const SubmitHandler = (e) => {
-        e.preventDefault();          
+        e.preventDefault();         
+        handleLogin(formData) 
         setFormData({email:"", password:""})
     }
+ 
+    
   return (
     <> 
        <div className=' h-screen flex items-center justify-center'>
@@ -32,6 +35,7 @@ const Login = () => {
                   required
                   name='password'
                   value={formData.password}
+                  autoComplete='true'
                   className='text-white  border-2 border-emerald-600 text-xl outline-none bg-transparent py-3 px-5 rounded-full placeholder:text-gray-400' type='password' placeholder=' Enter Your Password'/>
                  <button className=' text-white bg-emerald-600 text-xl outline-none border-none py-3 px-5 rounded-full placeholder:text-white'>Log in</button>
              </form>          
