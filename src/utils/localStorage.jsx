@@ -167,37 +167,37 @@ const employees = [
           "failed": 0
       },
       "tasks": [
-          {
-              "active": true,
-              "newTask": true,
-              "completed": false,
-              "failed": false,
-              "taskTitle": "UI redesign",
-              "taskDescription": "Redesign the user interface for better UX",
-              "taskDate": "2024-10-14",
-              "category": "Design"
-          },
-          {
-              "active": false,
-              "newTask": false,
-              "completed": true,
-              "failed": false,
-              "taskTitle": "Deploy new build",
-              "taskDescription": "Deploy the latest build to production",
-              "taskDate": "2024-10-09",
-              "category": "DevOps"
-          },
-          {
-              "active": true,
-              "newTask": false,
-              "completed": false,
-              "failed": false,
-              "taskTitle": "Client feedback",
-              "taskDescription": "Gather feedback from clients after product launch",
-              "taskDate": "2024-10-12",
-              "category": "Support"
-          }
-      ]
+        {
+            "active": true,
+            "newTask": true,
+            "completed": false,
+            "failed": false,
+            "taskTitle": "Update website",
+            "taskDescription": "Revamp the homepage design",
+            "taskDate": "2024-10-12",
+            "category": "Design" 
+        },
+        {
+            "active": false,
+            "newTask": false,
+            "completed": true,
+            "failed": false,
+            "taskTitle": "Client meeting",
+            "taskDescription": "Discuss project requirements",
+            "taskDate": "2024-10-10",
+            "category": "Meeting"
+        },
+        {
+            "active": true,
+            "newTask": false,
+            "completed": false,
+            "failed": false,
+            "taskTitle": "Fix bugs",
+            "taskDescription": "Resolve bugs reported in issue tracker",
+            "taskDate": "2024-10-14",
+            "category": "Development"
+        }
+    ]
   }
 ];
 

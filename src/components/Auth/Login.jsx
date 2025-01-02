@@ -12,7 +12,7 @@ const Login = ({handleLogin}) => {
                  };
         })  
      }
-    const SubmitHandler = (e) => {
+    const   SubmitHandler = (e) => {
         e.preventDefault();         
         handleLogin(formData) 
         setFormData({email:"", password:""})
